@@ -15,4 +15,6 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://ArchitSaki:$HF_TOKEN@huggingface.co/spaces/ArchitSaki/Conversional_QA_Bot main
+        run: |
+            
+            git push https://ArchitSaki:$HF_TOKEN@huggingface.co/spaces/ArchitSaki/Conversional_QA_Bot main --force
